@@ -10,12 +10,8 @@ main .pics{
     margin: 0 5% 0 5%;
     padding-top: 10px;
 }
-main .graph{
-    margin: 0 10% 0 10%;
-    padding-top: 10px;
-}
-/* HEADER*/
 
+/* HEADER*/
 
 .main-header .container{
     font-size: 12px;
@@ -35,7 +31,7 @@ main .graph{
 nav *,.right-header *{
     margin-left: 10px;
 }
-button{
+button, input{
     color: white;
     text-transform: uppercase;
     border-radius: 5px;
@@ -82,7 +78,7 @@ ul{
 li{
     float:left;
 }
-a{
+li a{
     color: white;
     text-decoration: none;
     border: 1px solid transparent;
@@ -162,14 +158,72 @@ a:hover{
 
 
 /* MAIN PT2  */
-.graph{
-    height: 500px;
+.graph .container{
+    width: 1200px;
+    margin: auto;
 }
 .graph .container img{
     object-fit: contain;
-    height: 200px;
+    width: 50%;
+    float: left;
+    padding: 10%;
+}
+.graph .container aside{
+    float: left;
+    width: 50%;
+    padding: 10%;
+}
+.linkaside{
+    color: #3871B0;
+    font-weight: 700;
+}
+.graph .container aside *{
+    margin-bottom: 20px;
+}
+
+
+footer{
+    background-color: #D3D3D3;
+    height: 120px;
+    line-height: 120px;
+}
+footer .container{
+    position: relative;
+    margin: 0 5% 0 5%;
+}
+footer > .container div{
     float: left;
 }
-footer{
-
+footer > .container > aside{
+    float:right;
 }
+footer > .container > aside > *{
+    display: inline-block;
+    margin-left: 20px;
+}
+select{
+    color: grey;
+    background-color: transparent;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    margin-right: 20px;
+    font-size: 15px;
+}
+aside > div{
+    color: grey;
+}
+#help{
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+}
+
+#marco{
+    text-align: center;
+}
+/* footer .container::after{
+    display: table;
+    content: '';
+    clear: both;
+} */
