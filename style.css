@@ -4,21 +4,50 @@
     box-sizing: border-box;
     font-family: 'Open Sans',sans-serif;
 }
+
+/* HEADER*/
+
 .main-header > *{
     margin: 0 5% 0 5%;
+    padding-top: 10px;
 }
 .container{
     font-size: 12px;
     overflow: hidden;
+    text-transform: uppercase;
 }
-/* .main-header .container nav{
-    float: left;
-} */
 .right-header{
     float: right;
 }
 .right-header *{
     display: inline-block;
+}
+.right-header div{
+    height: 40px;
+    line-height: 40px;
+}
+button{
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    outline:none;
+}
+#login{
+    background-color: transparent;
+    padding: 5px 15px;
+    border: 1px solid white;
+    outline:none;
+}
+.bt-green{
+    padding: 5px 15px;
+    background-color: #7CBB02;
+    border:none;
+}
+.bt-biggreen{
+    padding: 15px;
+    background-color: #7CBB02;
+    border:none;
 }
 .container::after{
     content: "";
@@ -57,13 +86,10 @@ a:hover{
     background-repeat: no-repeat;
     position: relative;
     background-color: #0C325A;
-    text-transform: uppercase;
     color: white;
 }
-
 .hero{
     height: 500px;
-    border: 1px solid black;
 }
 .background{
     position: absolute;
@@ -75,9 +101,17 @@ a:hover{
     height: 80%;
     width: 75%;
 }
+.hero-title{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hero-title h1{
+    margin-bottom: 10px;
+}
 
-
-
+/* HEADER2 */
+.header2
 
 
 
