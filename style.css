@@ -4,14 +4,20 @@
     box-sizing: border-box;
     font-family: 'Open Sans',sans-serif;
 }
-
-/* HEADER*/
-
-.main-header > *{
+/* PAGE MARGIN*/
+.main-header > *,
+main .pics{
     margin: 0 5% 0 5%;
     padding-top: 10px;
 }
-.container{
+main .graph{
+    margin: 0 10% 0 10%;
+    padding-top: 10px;
+}
+/* HEADER*/
+
+
+.main-header .container{
     font-size: 12px;
     overflow: hidden;
     text-transform: uppercase;
@@ -25,6 +31,9 @@
 .right-header div{
     height: 40px;
     line-height: 40px;
+}
+nav *,.right-header *{
+    margin-left: 10px;
 }
 button{
     color: white;
@@ -111,42 +120,56 @@ a:hover{
 }
 
 /* HEADER2 */
-.header2
+.header2{
+    position: relative;
+    height: 150px;
+    text-align: center;
+    background-color: #D3D3D3;
+}
+.header2 > div{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.header2 > div > *{
+    margin: 10px;
+}
 
 
-
-
-
-
-
-
-
+/* MAIN PT1*/
 
 .left > img,article > img, .right > img{
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     height: 200px;
 }
 
 .left,.right,article{
     margin-bottom: 20px;
+    width: 33.3%;
+    float:left;
+    text-align: center;
+    padding: 30px;
 }
-.left{
-    float: left;
-    width: 20%;
-    margin-right: 2%;
+.pics h2{
+    color: #7CBB02;
 }
-.right{
-    float: left;
-    width: 20%;
-}
-article{
-    width: 56%;
-    float: left;
-    margin-right: 2%;
+.pics hr{
+    margin: 30px 120px;
 }
 
 
+
+/* MAIN PT2  */
+.graph{
+    height: 500px;
+}
+.graph .container img{
+    object-fit: contain;
+    height: 200px;
+    float: left;
+}
 footer{
 
 }
